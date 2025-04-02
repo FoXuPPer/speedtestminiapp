@@ -48,8 +48,8 @@
 
  <script>
  // URL тестового файла для загрузки
- const TEST_SERVER_URL = "http://speedtest.tele2.net/10MB.zip"; // Публичный тестовый файл (10 МБ)
- const TEST_FILE_SIZE_MB = 10; // Размер тестового файла в М Б
+ const TEST_SERVER_URL = "http://speedtest.tele2.net/50MB.zip";
+ const TEST_FILE_SIZE_MB = 50;
 
  async function runSpeedTest() {
  const resultDiv = document.getElementById("result");
@@ -75,7 +75,7 @@
  download: downloadSpeed.toFixed(2)
  }));
  } catch (error) {
- resultDiv.innerHTML = "Ошибка при выполнении теста. Попробуй снова. 😔";
+ resultDiv.innerHTML = "Ошибка при выполнении теста. Попробуй снова.";
  console.error(error);
  }
  }
